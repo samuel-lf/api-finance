@@ -1,28 +1,17 @@
-# Adonis API application
+# Financeiro
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Simples API feita em adonisJS para um sistema financeiro pessoal
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+# Dependências
 
-## Setup
+- Node.js >= 8.0.0
+- Npm >= 3.0.0
 
-Use the adonis command to install the blueprint
+# Instalação
 
-```bash
-adonis new yardstick --api-only
-```
+Execute os comandos `npm install` e `adonis migration:run`
 
-or manually clone the repo and then run `npm install`.
+# Criação de uma nova rota
 
+Execute o comando `adonis make:model <name_model> -m -c`, ele será responsável por criar o seu `Model`, seu `Controller` e sua `Migration`.
 
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
