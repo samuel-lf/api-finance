@@ -18,3 +18,4 @@ const Route = use('Route')
 
 Route.post('/user', 'UserController.create')
 Route.post('/login', 'UserController.login')
+Route.resource('wallet', 'WalletController').apiOnly().middleware('auth')
